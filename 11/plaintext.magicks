@@ -1,0 +1,42 @@
+; Brian Yang
+; Foundations in CS
+; HW11 :: What is this Sorcery?
+; 2026-09-22
+
+1.1.1 Expressions
+
+Comments:
+- Scheme uses prefix notation, so the operator comes before the numbers.
+- Expressions can be combined and nested inside each other.
+- The interpreter reads, evaluates, and prints expressions.
+- Pretty-printing makes complicated expressions easier to understand.
+
+Question:
+- Why does Scheme put the operator before the numbers?
+
+
+1.1.2 Naming and the Environment
+
+Comments:
+- define gives a name to a value.
+- The environment keeps track of names and their values.
+- Naming things makes programs easier to use and understand.
+
+Question:
+- What happens if the same name is defined more than once?
+
+
+1.1.3 Evaluating Combinations
+
+Comments:
+- Scheme evaluates the smaller parts of an expression before applying the operator.
+- The process is recursive because expressions can contain other expressions.
+- The environment helps determine what names mean.
+- define is a special form because it follows a different evaluation rule.
+
+Question:
+- How does recursion help Scheme evaluate nested expressions?
+
+Notable Observation:
+- The tree representation shows how the values of smaller expressions combine to produce the final answer.
+
