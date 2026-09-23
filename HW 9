@@ -1,0 +1,32 @@
+; Brian Yang
+; Foundations in CS
+; HW09 :: Writing Functions
+; 2026-09-18
+; time spent: 0.44 hr
+
+; (foo d) returns its input.
+(define foo
+  (lambda (d)
+    d))
+(foo 7) "...should be 7"
+(foo 12) "...should be 12"
+(foo 25) "...should be 25"
+
+
+; (areaCirc r) returns the area of a circle with radius r.
+(define areaCirc
+  (lambda (r)
+    (* pi r r)))
+(areaCirc 2) "...should be 12.5663706144..."
+(areaCirc 4) "...should be 50.2654824574..."
+(areaCirc 6) "...should be 113.097335529..."
+
+
+; (areaWasher R2 R1) returns the area of a washer with outer radius R2 and inner radius R1.
+(define areaWasher  
+(lambda (R2 R1)
+    (- (areaCirc R2)
+       (areaCirc R1))))
+(areaWasher 4 2) "...should be 37.6991118431..."
+(areaWasher 6 3) "...should be 84.8230016469..."
+(areaWasher 8 5) "...should be 122.52211349..."
